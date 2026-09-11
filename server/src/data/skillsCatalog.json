@@ -1,0 +1,279 @@
+{
+  "skills": [
+    {
+      "name": "JavaScript",
+      "category": "Languages",
+      "synonyms": ["JS", "ECMAScript", "ES6", "ESNext", "Vanilla JS"]
+    },
+    {
+      "name": "TypeScript",
+      "category": "Languages",
+      "synonyms": ["TS"]
+    },
+    {
+      "name": "Python",
+      "category": "Languages",
+      "synonyms": ["Python3", "Py"]
+    },
+    {
+      "name": "Java",
+      "category": "Languages",
+      "synonyms": ["Core Java", "J2EE", "Java 8", "Java 11", "Java 17", "Java 21"]
+    },
+    {
+      "name": "C++",
+      "category": "Languages",
+      "synonyms": ["CPP", "C Plus Plus", "Modern C++"]
+    },
+    {
+      "name": "C#",
+      "category": "Languages",
+      "synonyms": ["CSharp", "C-Sharp", ".NET C#"]
+    },
+    {
+      "name": "Go",
+      "category": "Languages",
+      "synonyms": ["Golang"]
+    },
+    {
+      "name": "Rust",
+      "category": "Languages",
+      "synonyms": ["Rustlang"]
+    },
+    {
+      "name": "PHP",
+      "category": "Languages",
+      "synonyms": ["PHP7", "PHP8"]
+    },
+    {
+      "name": "Ruby",
+      "category": "Languages",
+      "synonyms": ["Ruby on Rails", "RoR"]
+    },
+    {
+      "name": "SQL",
+      "category": "Languages",
+      "synonyms": ["Structured Query Language", "T-SQL", "PL/SQL"]
+    },
+    {
+      "name": "HTML5",
+      "category": "Frontend",
+      "synonyms": ["HTML", "Semantic HTML"]
+    },
+    {
+      "name": "CSS3",
+      "category": "Frontend",
+      "synonyms": ["CSS", "SCSS", "Sass", "Less", "Stylus"]
+    },
+    {
+      "name": "React",
+      "category": "Frontend",
+      "synonyms": ["React.js", "ReactJS", "React Native", "Create React App"]
+    },
+    {
+      "name": "Next.js",
+      "category": "Frontend",
+      "synonyms": ["NextJS", "Next", "App Router"]
+    },
+    {
+      "name": "Vue.js",
+      "category": "Frontend",
+      "synonyms": ["Vue", "VueJS", "Vue 3", "Nuxt", "Nuxt.js"]
+    },
+    {
+      "name": "Angular",
+      "category": "Frontend",
+      "synonyms": ["AngularJS", "Angular 2+", "Angular 14+"]
+    },
+    {
+      "name": "Redux",
+      "category": "Frontend",
+      "synonyms": ["Redux Toolkit", "RTK", "Zustand", "Recoil", "MobX"]
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "Frontend",
+      "synonyms": ["Tailwind", "TailwindCSS"]
+    },
+    {
+      "name": "Node.js",
+      "category": "Backend",
+      "synonyms": ["Node", "NodeJS", "Node JS"]
+    },
+    {
+      "name": "Express.js",
+      "category": "Backend",
+      "synonyms": ["Express", "ExpressJS", "Express.JS"]
+    },
+    {
+      "name": "NestJS",
+      "category": "Backend",
+      "synonyms": ["Nest.js", "Nest"]
+    },
+    {
+      "name": "FastAPI",
+      "category": "Backend",
+      "synonyms": ["Fast API"]
+    },
+    {
+      "name": "Django",
+      "category": "Backend",
+      "synonyms": ["Django REST Framework", "DRF"]
+    },
+    {
+      "name": "Flask",
+      "category": "Backend",
+      "synonyms": ["Flask API"]
+    },
+    {
+      "name": "Spring Boot",
+      "category": "Backend",
+      "synonyms": ["Spring", "Spring MVC", "Spring Framework"]
+    },
+    {
+      "name": "ASP.NET Core",
+      "category": "Backend",
+      "synonyms": [".NET Core", "ASP.NET", ".NET 6", ".NET 7", ".NET 8"]
+    },
+    {
+      "name": "REST APIs",
+      "category": "Architecture",
+      "synonyms": ["REST", "RESTful APIs", "RESTful Web Services", "Web APIs", "API Design"]
+    },
+    {
+      "name": "GraphQL",
+      "category": "Architecture",
+      "synonyms": ["Apollo GraphQL", "Graph QL"]
+    },
+    {
+      "name": "gRPC",
+      "category": "Architecture",
+      "synonyms": ["Protobuf", "Protocol Buffers"]
+    },
+    {
+      "name": "Microservices",
+      "category": "Architecture",
+      "synonyms": ["Microservice Architecture", "Distributed Systems", "Service-Oriented Architecture", "SOA"]
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "Databases",
+      "synonyms": ["Postgres", "PgSQL", "Postgresql"]
+    },
+    {
+      "name": "MySQL",
+      "category": "Databases",
+      "synonyms": ["MariaDB", "My SQL"]
+    },
+    {
+      "name": "MongoDB",
+      "category": "Databases",
+      "synonyms": ["Mongo", "NoSQL", "DocumentDB"]
+    },
+    {
+      "name": "Redis",
+      "category": "Databases",
+      "synonyms": ["Redis Cache", "In-Memory Cache", "ElastiCache"]
+    },
+    {
+      "name": "Elasticsearch",
+      "category": "Databases",
+      "synonyms": ["Elastic Search", "ELK", "OpenSearch"]
+    },
+    {
+      "name": "DynamoDB",
+      "category": "Databases",
+      "synonyms": ["Amazon DynamoDB", "AWS DynamoDB"]
+    },
+    {
+      "name": "Oracle DB",
+      "category": "Databases",
+      "synonyms": ["Oracle Database", "Oracle SQL"]
+    },
+    {
+      "name": "AWS",
+      "category": "Cloud & DevOps",
+      "synonyms": ["Amazon Web Services", "EC2", "S3", "AWS Lambda", "ECS", "EKS", "CloudFormation", "IAM", "CloudFront"]
+    },
+    {
+      "name": "Azure",
+      "category": "Cloud & DevOps",
+      "synonyms": ["Microsoft Azure", "Azure DevOps", "Azure Functions", "Azure App Services"]
+    },
+    {
+      "name": "GCP",
+      "category": "Cloud & DevOps",
+      "synonyms": ["Google Cloud Platform", "Google Cloud", "BigQuery", "GKE", "Cloud Run"]
+    },
+    {
+      "name": "Docker",
+      "category": "Cloud & DevOps",
+      "synonyms": ["Containerization", "Docker Compose", "Containers"]
+    },
+    {
+      "name": "Kubernetes",
+      "category": "Cloud & DevOps",
+      "synonyms": ["K8s", "Helm", "Kubernetes Clusters"]
+    },
+    {
+      "name": "CI/CD",
+      "category": "Cloud & DevOps",
+      "synonyms": ["Continuous Integration", "Continuous Deployment", "GitHub Actions", "GitLab CI", "Jenkins", "CircleCI", "ArgoCD"]
+    },
+    {
+      "name": "Terraform",
+      "category": "Cloud & DevOps",
+      "synonyms": ["IaC", "Infrastructure as Code", "Terragrunt"]
+    },
+    {
+      "name": "Git",
+      "category": "Tools & Methodologies",
+      "synonyms": ["GitHub", "GitLab", "Bitbucket", "Version Control"]
+    },
+    {
+      "name": "Linux",
+      "category": "Tools & Methodologies",
+      "synonyms": ["Ubuntu", "Debian", "CentOS", "RHEL", "Bash", "Shell Scripting"]
+    },
+    {
+      "name": "Kafka",
+      "category": "Tools & Methodologies",
+      "synonyms": ["Apache Kafka", "Message Queues", "RabbitMQ", "Event-Driven Architecture", "SQS", "Pub/Sub"]
+    },
+    {
+      "name": "Agile",
+      "category": "Methodologies",
+      "synonyms": ["Scrum", "Kanban", "Sprint Planning", "Jira", "Confluence"]
+    },
+    {
+      "name": "Unit Testing",
+      "category": "Testing & Quality",
+      "synonyms": ["TDD", "Test-Driven Development", "Jest", "Mocha", "Chai", "PyTest", "JUnit", "Cypress", "Playwright", "Selenium"]
+    },
+    {
+      "name": "Security & Auth",
+      "category": "Security",
+      "synonyms": ["OAuth2", "JWT", "JSON Web Tokens", "SSO", "SAML", "HTTPS", "OWASP", "Authentication", "Authorization"]
+    },
+    {
+      "name": "Performance Optimization",
+      "category": "Engineering",
+      "synonyms": ["Latency Reduction", "Throughput", "Caching", "Load Balancing", "High Availability", "Scalability", "Profiling"]
+    },
+    {
+      "name": "Problem Solving",
+      "category": "Soft Skills",
+      "synonyms": ["Analytical Thinking", "Critical Thinking", "Troubleshooting", "Root Cause Analysis"]
+    },
+    {
+      "name": "Collaboration",
+      "category": "Soft Skills",
+      "synonyms": ["Teamwork", "Cross-Functional Collaboration", "Pair Programming", "Mentorship", "Stakeholder Communication"]
+    },
+    {
+      "name": "Leadership",
+      "category": "Soft Skills",
+      "synonyms": ["Tech Lead", "Team Lead", "Project Management", "Ownership", "Mentoring"]
+    }
+  ]
+}

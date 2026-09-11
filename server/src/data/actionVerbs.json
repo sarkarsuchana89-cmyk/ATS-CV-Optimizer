@@ -1,0 +1,28 @@
+{
+  "categories": {
+    "Development": [
+      "Engineered", "Developed", "Architected", "Implemented", "Constructed", 
+      "Built", "Designed", "Programmed", "Authored", "Configured", "Deployed"
+    ],
+    "Optimization": [
+      "Optimized", "Streamlined", "Accelerated", "Refactored", "Enhanced", 
+      "Reduced", "Increased", "Maximized", "Strengthened", "Standardized"
+    ],
+    "Leadership": [
+      "Led", "Spearheaded", "Directed", "Orchestrated", "Guided", 
+      "Mentored", "Championed", "Supervised", "Coordinated", "Drove"
+    ],
+    "Analysis": [
+      "Analyzed", "Evaluated", "Audited", "Identified", "Diagnosed", 
+      "Assessed", "Investigated", "Formulated", "Synthesized", "Benchmarked"
+    ],
+    "Integration": [
+      "Integrated", "Consolidated", "Migrated", "Automated", "Bridged", 
+      "Connected", "Interfaced", "Incorporated", "Merged"
+    ],
+    "Quality": [
+      "Validated", "Tested", "Debugged", "Ensured", "Maintained", 
+      "Secured", "Standardized", "Documented", "Enforced"
+    ]
+  }
+}
