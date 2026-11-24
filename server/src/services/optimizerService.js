@@ -1,7 +1,7 @@
 const actionVerbs = require('../data/actionVerbs.json');
 const skillsCatalog = require('../data/skillsCatalog.json');
 const { validateTruthfulness } = require('./validatorService');
-const { generateAiTailoredCv } = require('./aiService');
+const { generateAiTailoredCv, sanitizeApiKey } = require('./aiService');
 
 /**
  * Optimizes CV truthfully based on JD and ATS analysis
@@ -10,19 +10,14 @@ async function optimizeCv({ originalCv, jdText, atsAnalysis, apiKey }) {
   let tailoredCv = null;
   let optimizationMode = 'algorithmic';
 
-  // 1. If Gemini API key is provided, try AI optimization first
-  const effectiveKey = apiKey || process.env.GEMINI_API_KEY;
+  // 1. If Gemini API key is provided, perform AI optimization (no silent fallback)
+  const effectiveKey = sanitizeApiKey(apiKey || process.env.GEMINI_API_KEY);
   if (effectiveKey) {
-    try {
-      tailoredCv = await generateAiTailoredCv(originalCv, jdText, atsAnalysis, effectiveKey);
-      optimizationMode = 'ai_gemini';
-    } catch (err) {
-      console.warn('AI Optimization fallback to algorithmic engine:', err.message);
-    }
-  }
-
-  // 2. Fallback to algorithmic NLP optimizer
-  if (!tailoredCv) {
+    tailoredCv = await generateAiTailoredCv(originalCv, jdText, atsAnalysis, effectiveKey);
+    optimizationMode = 'ai_gemini';
+    console.log("gemini is worked");
+  } else {
+    // 2. Only use deterministic algorithmic optimizer if no API key is supplied
     tailoredCv = algorithmicOptimizeCv(originalCv, jdText, atsAnalysis);
     optimizationMode = 'algorithmic_nlp';
   }
