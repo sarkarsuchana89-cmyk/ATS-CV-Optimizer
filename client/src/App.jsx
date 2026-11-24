@@ -81,12 +81,14 @@ export default function App() {
     setIsLoading(true);
 
     try {
-      // 1. Run ATS Analysis
-      setLoadingText('Analyzing CV against Job Description & extracting keywords...');
+      const apiKey = localStorage.getItem('GEMINI_API_KEY') || '';
+
+      // 1. Run ATS Analysis (uses Gemini AI when key is present)
+      setLoadingText('Analyzing CV against Job Description with Gemini AI...');
       const analyzeRes = await fetch('/api/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ cvData, jdText })
+        body: JSON.stringify({ cvData, jdText, apiKey })
       });
 
       const analyzeJson = await analyzeRes.json();
@@ -94,9 +96,8 @@ export default function App() {
 
       setAnalysis(analyzeJson.analysis);
 
-      // 2. Run Truthful Optimization
-      setLoadingText('Optimizing CV bullet points & verifying factual integrity...');
-      const apiKey = localStorage.getItem('GEMINI_API_KEY') || '';
+      // 2. Run Truthful Optimization (AI tailoring)
+      setLoadingText('Tailoring CV bullet points with Gemini AI & verifying integrity...');
       const optRes = await fetch('/api/optimize', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -110,6 +111,10 @@ export default function App() {
 
       const optJson = await optRes.json();
       if (!optRes.ok) throw new Error(optJson.error || 'Optimization failed');
+
+      if (optJson.optimizationMode === 'ai_gemini') {
+        console.log("gemini is worked");
+      }
 
       setTailoredCv(optJson.tailoredCv);
       setOptimizedAnalysis(optJson.optimizedAnalysis);
